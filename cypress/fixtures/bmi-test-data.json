@@ -1,0 +1,66 @@
+{
+  "testData": {
+    "validBMITests": [
+      {
+        "height": 170,
+        "weight": 70,
+        "unit": "metric",
+        "expectedBMI": 24.22,
+        "category": "Normal weight"
+      },
+      {
+        "height": 180,
+        "weight": 56,
+        "unit": "metric", 
+        "expectedBMI": 17.28,
+        "category": "Underweight"
+      },
+      {
+        "height": 170,
+        "weight": 80,
+        "unit": "metric",
+        "expectedBMI": 27.68,
+        "category": "Overweight"
+      },
+      {
+        "height": 165,
+        "weight": 95,
+        "unit": "metric",
+        "expectedBMI": 34.90,
+        "category": "Obese"
+      }
+    ],
+    "invalidInputTests": [
+      {
+        "height": 0,
+        "weight": 70,
+        "description": "Zero height"
+      },
+      {
+        "height": 170,
+        "weight": 0,
+        "description": "Zero weight"
+      },
+      {
+        "height": -170,
+        "weight": 70,
+        "description": "Negative height"
+      },
+      {
+        "height": 170,
+        "weight": -70,
+        "description": "Negative weight"
+      },
+      {
+        "height": "",
+        "weight": 70,
+        "description": "Empty height"
+      },
+      {
+        "height": 170,
+        "weight": "",
+        "description": "Empty weight"
+      }
+    ]
+  }
+}
